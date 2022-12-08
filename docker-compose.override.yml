@@ -1,0 +1,3 @@
+services:
+  mya:
+    image: slominskir/mya:1.0.0

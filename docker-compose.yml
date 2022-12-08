@@ -1,0 +1,9 @@
+services:
+  mya:
+    hostname: mya
+    container_name: mya
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_PASSWORD: password

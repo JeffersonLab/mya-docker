@@ -1,0 +1,8 @@
+services:
+  mya:
+    extends:
+      file: docker-compose.yml
+      service: mya
+    build:
+      context: .
+      dockerfile: Dockerfile
