@@ -1,4 +1,4 @@
-# mya-docker
+# mycontainer
 Read-only MYA Docker container.
 
 # Overview
