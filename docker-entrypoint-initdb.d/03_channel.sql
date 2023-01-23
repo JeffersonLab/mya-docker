@@ -4,6 +4,8 @@
 -- name and host modified
 INSERT INTO `channels` VALUES (3,'channel3',6,NULL,168,NULL,1,1,0,'mya',6197335468200165376,NULL);
 
+-- hstmya02: show create table table_3794;
+-- table name and partitioning modified
 CREATE TABLE `table_3` (
                            `time` bigint(20) NOT NULL,
                            `code` tinyint(3) unsigned NOT NULL DEFAULT '0',

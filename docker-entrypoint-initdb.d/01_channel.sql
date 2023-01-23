@@ -4,6 +4,8 @@
 -- name and host modified
 insert into channels (chan_id, name, type, adel, size, clip, active, request, alert, host, backup, ioc) values (1, 'channel1', 6, 0.1, 1, NULL, 1, 1, 0, 'mya', 6199944484738826240, NULL);
 
+-- hstmya03: show create table table_15766;
+-- table name and partitioning modified
 CREATE TABLE `table_1` (
                            `time` bigint(20) NOT NULL,
                            `code` tinyint(3) unsigned NOT NULL DEFAULT '0',

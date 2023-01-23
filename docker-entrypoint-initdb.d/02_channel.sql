@@ -7,6 +7,8 @@ INSERT INTO `channels` VALUES (2,'channel2',3,NULL,1,NULL,1,1,0,'mya',6199944484
 -- hstmya00: chan_id = 15170
 INSERT INTO `metadata` VALUES (2,'enum_strings','2007-02-05 17:47:39','BEAM SYNC ONLY\0PULSE MODE VL\0TUNE MODE\0CW MODE (DC)\0EXPERT MODE\0\0'),(2,'enum_strings','2016-08-12 13:00:49','BEAM SYNC ONLY\0PULSE MODE VL\0TUNE MODE\0CW MODE (DC)\0USER MODE\0\0');
 
+-- hstmya01: show create table table_15170;
+-- table name and partitioning modified
 CREATE TABLE `table_2` (
                            `time` bigint(20) NOT NULL,
                            `code` tinyint(3) unsigned NOT NULL DEFAULT '0',
