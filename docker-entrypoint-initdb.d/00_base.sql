@@ -93,4 +93,16 @@ begin
     end if;
 end;
 //
+
+CREATE DEFINER=`myapi`@`localhost` FUNCTION `STR_TO_MYA`(str char(64)) RETURNS bigint(17)
+    COMMENT 'Return a MYA Timestamp given an ISO8901 string'
+begin
+    declare hi bigint(20) unsigned default 0;
+
+    set time_zone = 'America/New_York';
+    set hi=unix_timestamp(str);
+
+return (hi << 28);
+end;
+//
 DELIMITER ;
