@@ -40,7 +40,7 @@ docker pull jeffersonlab/mycontainer
 ## Configure
 The container is extended from the official [MariaDB](https://hub.docker.com/_/mariadb) image so all of those environment variables apply, especially the `MYSQL_PASSWORD` and `MYSQL_ROOT_PASSWORD`.
 
-You can mount an `.sql` file into the /docker-entrypoint-initdb.d/ directory to add additional data.  Some [files](https://github.com/JeffersonLab/mycontainer/tree/main/docker-entrypoint-initdb.d) already exist, so be careful not to overwrite or name your file starting with a number that forces it to be processed before the DDL is run. 
+You can mount an `.sql` file into the /docker-entrypoint-initdb.d/ directory to add additional data.  Some [files](https://github.com/JeffersonLab/mycontainer/tree/main/docker-entrypoint-initdb.d) already exist, so be careful not to overwrite or name your file starting with a number that forces it to be processed before the DDL is run.   Use a file mount and avoid an entire directory mount else you'll erase the `0_base.sql` file needed to setup the base DML. 
 
 ## Build
 ```
