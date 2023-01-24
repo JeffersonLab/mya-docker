@@ -95,7 +95,7 @@ end;
 //
 
 CREATE DEFINER=`myapi`@`localhost` FUNCTION `STR_TO_MYA`(str char(32)) RETURNS bigint(20)
-    COMMENT 'Return a MYA Timestamp given an ISO8901 string'
+    COMMENT 'Return a MYA Timestamp given an ISO8901 string.  Fractional seconds are ignored.'
 begin
     declare hi bigint(20) unsigned default 0;
 
@@ -106,7 +106,7 @@ end;
 //
 
 CREATE DEFINER=`myapi`@`localhost` FUNCTION `MYA_TO_STR`(time bigint(20)) RETURNS char(32)
-    COMMENT 'Return an ISO8901 string given a MYA Timestamp'
+    COMMENT 'Return an ISO8901 string given a MYA Timestamp.  Fractional seconds are ignored.'
 begin
     declare hi bigint(20) unsigned default 0;
 
