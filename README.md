@@ -50,8 +50,9 @@ docker build -t mycontainer .
 ```
 
 ## Release
-1. Run docker build and tag release
-2. Push to DockerHub
+1. Create a new release on the GitHub [Releases](https://github.com/JeffersonLab/mycontainer/releases) (Enumerate changes and link issues). 
+2. Build and publish a new Docker image [from the GitHub tag](https://gist.github.com/slominskir/a7da801e8259f5974c978f9c3091d52c#8-build-an-image-based-of-github-tag). GitHub is configured to do this automatically on git push of semver tag (typically part of GitHub release) or the [Publish to DockerHub](https://github.com/JeffersonLab/mycontainer/actions/workflows/docker-publish.yml) action can be manually triggered after selecting a tag.
+3. Bump and commit quick start [image version](https://github.com/JeffersonLab/mycontainer/blob/main/docker-compose.override.yml)
 
 ## See Also
 - [myquery](https://github.com/JeffersonLab/myquery)
