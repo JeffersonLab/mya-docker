@@ -12,7 +12,7 @@ Read-only MYA Docker container.
 ---
 
 ## Overview
-The JLab [EPICS](https://epics-controls.org/) archiver is named MYA, and this project provides a read-only instance in a container.  The container image leverages the [MariaDB](https://hub.docker.com/_/mariadb) image and adds the MYA schema with some example data.  The parts of MYA that monitor EPICS and write to the database are not included.  This container is useful for testing and developing MYA-dependent apps.
+The JLab [EPICS](https://epics-controls.org/) archiver is named MYA, and this project provides a read-only single node instance in a container.  The container image leverages the [MariaDB](https://hub.docker.com/_/mariadb) image and adds the MYA schema with some example data.  The parts of MYA that monitor EPICS and write to the database are not included.  This container is useful for testing and developing MYA-dependent apps.
 
 ## Quick Start with Compose
 1. Grab project
