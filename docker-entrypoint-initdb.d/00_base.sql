@@ -99,7 +99,6 @@ CREATE DEFINER=`myapi`@`localhost` FUNCTION `STR_TO_MYA`(str char(32)) RETURNS b
 begin
     declare hi bigint(20) unsigned default 0;
 
-    set time_zone = 'America/New_York';
     set hi=unix_timestamp(str);
 
     return (hi << 28);
@@ -113,7 +112,6 @@ begin
 
     set hi=time >> 28;
 
-    set time_zone = 'America/New_York';
     return from_unixtime(hi);
 end;
 //
